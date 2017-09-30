@@ -29,7 +29,7 @@ import ProductServiceAPI
 // Setup the middleware and routes avaliable for this service
 let router = Router()
 router.all("/*", middleware: LoggingMiddleware())
-router.all("/*", middleware: JWTMiddleware())
+router.all("/v1/products/:productId/purchase", middleware: JWTMiddleware())
 let handlers = Handlers()
 router.get("/v1/products", handler: handlers.handleProducts)
 router.get("/v1/products/:productId", handler: handlers.handleProduct)
