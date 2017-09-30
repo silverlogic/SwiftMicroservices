@@ -19,7 +19,8 @@ let package = Package(
             name: "ProductServiceAPI",
             dependencies: [
                 "Kitura",
-                "HeliumLogger"
+                "HeliumLogger",
+                "PerfectCrypto"
             ],
             path: "./Sources/ProductServiceAPI/"
         )
