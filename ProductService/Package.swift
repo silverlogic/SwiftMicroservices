@@ -8,6 +8,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "1.7.9"),
         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.7.1"),
+        .package(url: "https://github.com/PerfectlySoft/Perfect-Crypto.git", from: "3.0.1")
     ],
     targets: [
         .target(
